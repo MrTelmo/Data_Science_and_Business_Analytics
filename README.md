@@ -1,100 +1,99 @@
-# Data Science & Business Analytics Course
-
-![EDIT. Badge](https://img.shields.io/badge/Course-EDIT._Disruptive_Digital_Education-yellow) ![Status](https://img.shields.io/badge/Status-In_Progress-green) ![Focus](https://img.shields.io/badge/Focus-Data_Science_&_AI-blue)
+# Data Science & Business Analytics
 
 ## 📖 About The Course
 
-This repository contains projects, exercises, and notes from the **Data Science & Business Analytics** program at [EDIT. - Disruptive Digital Education](https://weareedit.io/).
+This repository contains my projects, notes, and exercises from the **Data Science & Business Analytics** program at **EDIT. - Disruptive Digital Education**.
 
-[cite_start]The program is designed to provide comprehensive knowledge in data collection, treatment, and analysis, empowering the strategic application of data in business management[cite: 32]. [cite_start]It covers the entire data lifecycle—from extraction and cleaning to advanced machine learning modeling and visualization[cite: 35, 36].
+The program is designed by industry professionals to provide comprehensive knowledge in the collection, treatment, and analysis of data, empowering strategic decision-making in business contexts. It covers the full data lifecycle—from extraction and cleaning to advanced machine learning modeling and visualization.
 
-* **Institution:** EDIT. - [cite_start]Disruptive Digital Education [cite: 1]
-* [cite_start]**Duration:** 216 Hours (152h Hands-on, 48h Project, 16h Workshop) [cite: 17]
-* [cite_start]**Cohort:** November 2025 - April 2026 [cite: 163]
+* **Total Duration:** 216 Hours (152h Hands-on, 48h Project, 16h Workshop).
 
 ## 🎯 Learning Objectives
 
-By the end of this course, the repository will demonstrate proficiency in the following areas:
+By the end of this course, the work in this repository demonstrates the ability to:
 
-* [cite_start]**Data Management:** Extracting, querying, cleaning, and aggregating raw data[cite: 35].
-* [cite_start]**Analysis:** Conducting visual and statistical analysis to identify trends and patterns[cite: 36].
-* [cite_start]**Modeling:** Building and implementing algorithms using Python and Machine Learning techniques[cite: 36, 37].
-* [cite_start]**Big Data:** Identifying and solving Big Data challenges using modern ecosystems[cite: 38].
-* [cite_start]**Communication:** Creating clear reports and dashboards to share insights with stakeholders[cite: 37].
+* **Data Management:** Collect, extract, query, clean, and aggregate data for analysis.
+* **Analysis:** Perform visual and statistical analysis of data to identify trends.
+* **Implementation:** Build and implement algorithms using tools like Python.
+* **Modeling:** Construct machine learning models and create clear visualizations/reports for stakeholders.
+* **Problem Solving:** Identify "Big Data" problems and apply processes for solution modeling and validation.
 
 ## 🛠 Technologies & Tools
 
-The following tools and frameworks are utilized throughout the modules:
+The curriculum utilizes the following tools and concepts:
 
-* [cite_start]**Languages:** Python (Pandas, NumPy, Scikit-learn) [cite: 36, 50][cite_start], SQL[cite: 72].
-* [cite_start]**Visualization:** Tableau [cite: 85][cite_start], Matplotlib/Seaborn (implied via Python plotting)[cite: 52].
-* [cite_start]**Big Data:** Spark, Hadoop Ecosystem concepts[cite: 53, 58].
-* [cite_start]**Machine Learning:** Supervised & Unsupervised Learning models, Neural Networks, Deep Learning[cite: 97, 98, 104].
-* [cite_start]**Database Management:** Relational & Non-relational databases, Data Warehousing[cite: 65, 66].
+* **Languages & Libraries:** Python (Pandas, Seaborn), SQL.
+* **Big Data Ecosystem:** Spark, Distributed Processing, Hadoop concepts.
+* **Visualization:** Tableau, Dashboarding techniques.
+* **Databases:** Relational and Non-relational databases, Data Warehousing.
+* **Machine Learning:** Supervised/Unsupervised Learning, Deep Neural Networks.
 
 ## 📂 Repository Structure
 
-[cite_start]The content is organized by the course modules as delivered in the schedule[cite: 165, 177, 186, 201, 212]:
+The course is divided into 10 modules. This repository is organized chronologically according to the class schedule:
 
-### 🔹 Module 01: Data Science Fundamentals
-*Focus: Introduction to the data science workflow, Python basics, and data mining techniques.*
-* [cite_start]**Topics:** Data mining branches, Python key concepts, data loading/cleansing, feature extraction [cite: 47-52].
-* [cite_start]**Tutor:** Rodrigo Moutinho[cite: 165].
+### 🔹 Module 1: Data Science Fundamentals
+* **Topics:**
+    * Data Science definitions and applications.
+    * Data Mining branches and techniques.
+    * Python Fundamentals (Data loading, cleansing, plotting, feature extraction).
 
-### 🔹 Module 02: Database Fundamentals
-*Focus: Understanding how data is stored and retrieved.*
-* [cite_start]**Topics:** SQL fundamentals, Relational vs. Non-relational databases, Data warehousing, Star/Snowflake schemas [cite: 63-72].
-* [cite_start]**Tutor:** Natacha Cabral[cite: 165].
+### 🔹 Module 2: Database Fundamentals
+* **Topics:**
+    * Database and Datawarehouse concepts.
+    * Relational vs. Non-relational databases.
+    * Data Models (Star and Snowflake schemas).
+    * SQL Fundamentals.
 
-### 🔹 Module 03: Quantitative & Statistical Analysis
-*Focus: The mathematical backbone of data analysis.*
-* [cite_start]**Topics:** Quantitative data types, collection methods, and analysis steps [cite: 109-115].
-* [cite_start]**Tutor:** Carla Cardoso[cite: 177].
+### 🔹 Module 3: Quantitative & Statistical Analysis and Modeling
+* **Topics:**
+    * Quantitative Data definition and types.
+    * Collection and Analysis methods.
+    * Differences between Quantitative and Qualitative Data.
 
-### 🔹 Module 04: Exploratory Data Analysis (EDA)
-*Focus: Initial investigations on data to discover patterns.*
-* [cite_start]**Topics:** Descriptive statistics, visualization techniques, and understanding data types [cite: 88-92].
-* [cite_start]**Tutor:** Carla Cardoso[cite: 177].
+### 🔹 Module 4: Exploratory Data Analytics (EDA)
+* **Topics:**
+    * Descriptive Statistics.
+    * Visualization techniques and tools.
+    * Types of data review.
 
-### 🔹 Module 05: Business Analytics
-*Focus: Applying data to solve business problems.*
-* [cite_start]**Topics:** Descriptive/Predictive/Prescriptive analytics, Text mining, Heuristics-based optimization [cite: 73-80].
-* [cite_start]**Tutor:** Bruno Valinhas[cite: 186].
+### 🔹 Module 5: Business Analytics
+* **Topics:**
+    * Descriptive, predictive, and prescriptive analytics.
+    * Text Mining and Heuristics-based optimization.
+    * Analytics as a competitive advantage.
 
-### 🔹 Module 06: Analysing & Visualizing Data
-*Focus: Storytelling with data.*
-* [cite_start]**Topics:** Information visualization theory, Interactive dashboards in Tableau [cite: 84-87].
-* [cite_start]**Tutor:** Thiago Turini[cite: 186].
+### 🔹 Module 6: Analyzing & Visualizing Data
+* **Topics:**
+    * Introduction to Information Visualization and Tableau.
+    * Creating interactive dashboards.
+    * The role of visualization in Data Science.
 
-### 🔹 Module 07: Big Data Technologies
-*Focus: Handling large-scale datasets.*
-* [cite_start]**Topics:** Big Data ecosystems, Distributed processing with Spark, Data Pipelines, Workflow concepts [cite: 53-62].
-* [cite_start]**Tutor:** Rodrigo Moutinho[cite: 186].
+### 🔹 Module 7: Big Data Technologies
+* **Topics:**
+    * Big Data Ecosystem and Clusters.
+    * Distributed Processing with Spark.
+    * Building Data Pipelines and Workflows.
 
-### 🔹 Module 08: Machine Learning Models
-*Focus: Building predictive systems.*
-* [cite_start]**Topics:** Linear Algebra/Probability review, Supervised vs. Unsupervised learning, System design [cite: 94-99].
-* [cite_start]**Tutor:** Thiago Turini[cite: 201].
+### 🔹 Module 8: Machine Learning Models
+* **Topics:**
+    * Review of Linear Algebra and Probability Theory.
+    * Supervised vs. Unsupervised Learning.
+    * Machine Learning system design and applications.
 
-### 🔹 Module 09: Introduction to Neural Networks (Deep Learning)
-*Focus: Advanced AI models.*
-* [cite_start]**Topics:** Deep Neural Networks, CNNs, Sequence Models, Practical Deep Learning [cite: 103-107].
-* [cite_start]**Tutor:** Carla Cardoso[cite: 212].
+### 🔹 Module 9: Introduction to Neural Networks (Deep Learning)
+* **Topics:**
+    * Deep Neural Networks.
+    * Deep Convolutional Neural Networks.
+    * Sequence Models and Practical Deep Learning.
 
 ### 🔹 Module 10: Applied Practice (Final Project)
-*Focus: End-to-end data science project.*
-* [cite_start]**Workflow:** Problem identification -> Data acquisition/cleaning -> Analysis -> Visualization -> Presentation to stakeholders [cite: 119-126].
-* [cite_start]**Tutors:** Rodrigo Moutinho & Carla Cardoso[cite: 212].
+* **Focus:** An end-to-end data science project applying all skills learned.
+    * Identify a problem and obtain data.
+    * Prepare, clean, format, and analyze the data.
+    * Create visualizations/dashboards.
+    * Present high-level insights to stakeholders.
+
 
 ---
-
-## 👨‍🏫 Instructors
-
-* **Rodrigo Moutinho**
-* **Natacha Cabral**
-* **Carla Cardoso**
-* **Bruno Valinhas**
-* **Thiago Turini**
-
----
-*Disclaimer: This repository is for educational purposes as part of the EDIT. training program. All project data sources are credited within their respective folders.*
+*Disclaimer: This repository is for educational purposes as part of the EDIT. training program.*
