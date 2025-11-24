@@ -93,7 +93,3 @@ The course is divided into 10 modules. This repository is organized chronologica
     * Prepare, clean, format, and analyze the data.
     * Create visualizations/dashboards.
     * Present high-level insights to stakeholders.
-
-
----
-*Disclaimer: This repository is for educational purposes as part of the EDIT. training program.*
