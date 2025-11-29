@@ -8,7 +8,7 @@ N = int(input("Input an integer number: "))
 for i in range(N, -1, -1):
     print(i)
 
-# Exercicio 3 - Peça números ao usuário até ele digitar 0. Mostre a soma total dos números digitados.
+# Exercicio 3 - Choose numbers randomly and sum them until user inputs 0, then showcase total sum of the input numbers.
 number = int(input("Input number: "))
 sum = 0
 while number != 0:
@@ -16,45 +16,49 @@ while number != 0:
   number = int(input("Input number: "))
 print("Total sum:", sum)
 
-#exercicio 4
+# Exercicio 4 - Choose a number N and showcase the multiplication table of N.
 number = int(input("Input number: "))
 for i in range(1,11):
-  tabuada = number*i
-  print(number,"x",i,"=", tabuada)
+  multi_table = number*i
+  print(number,"x",i,"=", multi_table)
 
-#exercicio 5
-number_tabuada = int(input("Input number tabuada: "))
-for i in range (1,number_tabuada+1):
+# Exercicio 5 - Choose a number N and showcase the multiplication table from 1 to N.
+number_table = int(input("Input number: "))
+for i in range (1,number_table+1):
   for j in range(1,11):
-    tabuada = j*i
-    print(i,"x",j,"=", tabuada)
+    multi_table = j*i
+    print(i,"x",j,"=", multi_table)
   print("-----------------------")
 
-#exercicio 6
-list=[x for x in range (0,21) if x%2==0]
+# Exercicio 6 - Choose a number N and showcase all even numbers until N inclusive.
+even_number = int(input("Input number: "))
+list=[x for x in range (0,even_number+1) if x%2==0]
 print(list)
 
-#exercicio 7
-list=[x**2 for x in range (1,11)]
+# Exercicio 7 - Choose a number N and showcase all the square from 1 until N inclusive.
+square_number = int(input("Input number: "))
+list=[x**2 for x in range (1,square_number+1)]
 print(list)
 
-#exercicio 8
-frutas = ["maçã", "banana", "laranja", "kiwi", "uva", "manga"]
+# Exercicio 8 - From the list fruits
+fruits = ["apple", "banana", "orange", "kiwi", "grape", "mango"]
+# 8.1 - Print first 3 fruits
 print(frutas[:3])
+# 8.2 - Print last 3 fruits
 print(frutas[-3:])
+# 8.3 - Print the list inverted
 print(frutas[::-1])
 
-#exercicio 9
+# Exercicio 9 - Input a word, and count the number of vowels in it.
 word = input("Input word: ").lower()
-#vogais = ["a","A","e","E","i","I","o","O","u","U"]
-vogais = ['a', 'e', 'i', 'o', 'u','á', 'é', 'í', 'ó', 'ú','â', 'ê', 'î', 'ô', 'û','ã', 'õ']
+vowels = ['a', 'e', 'i', 'o', 'u','á', 'é', 'í', 'ó', 'ú','â', 'ê', 'î', 'ô', 'û','ã', 'õ']
 count = 0
-for letra in word:
-  if letra in vogais:
+for letter in word:
+  if letter in vowels:
     count += 1
-print("# de Vogais:", count)
+print("# of vowels: ", count)
 
-#exercicio 10
+# Exercicio 10 - 
 list=[4,7,1,9,3,10]
 sum = 0
 for i in list:
