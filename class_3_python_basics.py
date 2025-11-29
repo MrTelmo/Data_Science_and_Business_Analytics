@@ -58,7 +58,7 @@ for letter in word:
     count += 1
 print("# of vowels: ", count)
 
-# Exercicio 10 - 
+# Exercicio 10 -  TO BE continued
 list=[4,7,1,9,3,10]
 sum = 0
 for i in list:
