@@ -3,7 +3,7 @@ N = int(input("Input an integer number: "))
 for i in range(1, N + 1, 1):
     print(i)
     
-# Exercicio 2 - Choose a number and showcase regression countdown until 0.
+# Exercicio 2 - Choose a number and showcase regressive countdown until 0.
 N = int(input("Input an integer number: "))
 for i in range(N, -1, -1):
     print(i)
