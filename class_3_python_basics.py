@@ -58,13 +58,14 @@ for letter in word:
     count += 1
 print("# of vowels: ", count)
 
-# Exercicio 10 -  TO BE continued
-list=[4,7,1,9,3,10]
-sum = 0
-for i in list:
-  sum += i
-print(sum)
-
+# Exercicio 10 -  Input a number N to generate a list of numbers (random), identify Max and Min numbers of the list and sum the numbers of the list.
+from numpy import random
+list_number = input("Input a number N to define the size of the list: ")
+list = []
+for i in range(int(list_number)):
+  number = random.randint(0,99)
+  list.append(number)
+print(f'The list: {list}')
 max = list[0]
 min = list[0]
 for num in list[0:]:
@@ -72,6 +73,10 @@ for num in list[0:]:
     max = num
   if num < min:
     min = num
-print("Max :",max)
-print("Min :",min)
+print("Max #:",max)
+print("Min #:",min)
+sum = 0
+for i in list:
+  sum += i
+print(f'Total sum of the list #s {sum}')
 
