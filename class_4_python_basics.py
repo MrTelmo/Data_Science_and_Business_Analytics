@@ -1,19 +1,18 @@
-#Exercicio 1
-def saudacao(nome):
-  print(f"Olá, {nome}!")
+# Exercicio 1 - Create a salutation function
+def salutation(name):
+  print(f"Hey, {name}!")
+name=input("Input name: ")
+salutation(name)
 
-nome=input("Introduzir nome: ")
-saudacao(nome)
-
-#Exercicio 2
-def soma(*args):
+# Exercicio 2 - Create a function that sums numbers
+def sum_numbers(*args):
   return sum(args)
 
 number_1=int(input("Input number: "))
 number_2=int(input("Input another number: "))
-print("Sum: ", soma(number_1,number_2))
+print("Sum: ", sum_numbers(number_1,number_2))
 
-#Exercicio 3
+#Exercicio 3 - TO BE CONTINUED
 def average(*args):
   return (sum(args)/len(args))
 
