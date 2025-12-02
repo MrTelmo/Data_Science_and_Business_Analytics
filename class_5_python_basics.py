@@ -1,32 +1,14 @@
-
 import pandas as pd
 
-"""# Exercicio 1 - Entendimento do Negócio
-
-O dataset permite identificar padroes de consumo de forma a otimizar uma estratégia de vendas e marketing:
-
-- Canais mais lucrativos
-- Categorias de produtos com mais margem
-- Produtos com mais ROI
-- Satisfação do cliente - por produto/canal/vendedor
-
-Através da identificação e analise de métricas, será defina uma estratégia que procure a alocação recursos de forma mais eficiente nos canais (online, app, física) que geram maior retorno sobre o investimento (ROI).
-
-O objetivo final é aumentar a receita líquida e a margem total através de vendas direcionadas e da melhoria contínua da satisfação do cliente.
-
-# Exercicio 2 - Entendimento dos Dados
-- cidade: cidade cliente
-- distrito: distrito cidade
-- avaliacao_cliente: avaliação de satisfação do cliente face ao processo de compra (conceito mto generico que poderá posteriormente ser refinado por canal/produto/vendedor)
-- portes: custo de portes de envio
-- desconto_percent: % desconto sobre o preço unitario
-"""
-
-# upload doc
+# Upload dataset
 vendas = pd.read_excel("/content/vendas_portugal.xlsx")
 vendas.head()
 
-"""Null values:
+# Brief analysis of the data set
+vendas.info()
+vendas.describe()
+'''
+Null values:
 - x3 'cidade'
 - x5 'preco_unitario'; 'quantidade'; 'desconto_percent'
 
@@ -36,12 +18,10 @@ Inconsistencies:
 - 'produto' and 'categoria' sometimes not matching
 
 Outliers:
-- nao identificados (para ja)
-"""
+- na
+'''
 
-vendas.info()
-
-vendas.describe()
+# Dataset
 
 """#Exercicio 3 - Preparação dos Dados"""
 
