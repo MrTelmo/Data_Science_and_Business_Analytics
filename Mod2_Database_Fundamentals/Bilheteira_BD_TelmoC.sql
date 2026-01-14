@@ -1,34 +1,34 @@
--- P1) Quais os títulos, dias e horas dos espetáculos registados na BD?
+-- Q1) What are the titles, dates, and times of the shows registered in the database?
 SELECT titulo, dia, hora FROM public.espetaculo
 LIMIT 20;
--- P2) Quais as categorias e os títulos dos espetáculos registados na BD?
+-- Q2) What are the categories and titles of the shows registered in the database?
 SELECT categoria, titulo FROM public.espetaculo
 LIMIT 20;
--- P3) Quais os nomes e datas de nascimento dos cantores registados? Ordene o resultado por data de nascimento crescente.
+-- Q3) What are the names and birth dates of the registered singers? Order the result by birth date in ascending order.
 SELECT nome, d_nasc, tipo FROM public.artista
 WHERE tipo = 'cantor'
 ORDER BY d_nasc ASC
 LIMIT 20;
--- P4) Quais os emails e os nomes dos espectadores do Porto? Ordene o resultado por email.
+-- Q4) What are the emails and names of the spectators from Porto? Order the result by email.
 SELECT email, nome, cidade FROM public.espectador
 WHERE cidade = 'Porto'
 ORDER BY email ASC
 LIMIT 20;
--- P5) Relativamente a cada artista, liste o seu nome e o dia e o título dos espetáculos em que foi o artista principal.
--- Ordene o resultado por nome crescente e por data decrescente
+-- Q5) For each artist, list their name, along with the date and title of the shows where they were the main artist.
+-- Order the result by name in ascending order and by date in descending order.
 SELECT nome, dia, titulo FROM public.artista a
 JOIN public.espetaculo s
 ON a.nif=s.nif
 ORDER BY nome ASC, dia DESC
 LIMIT 20;
--- P6) Relativamente a cada espetador, liste o seu nome e o lugar e o custo dos bilhetes que adquiriu.
--- Ordene o resultado por nome crescente e por custo decrescente.
+-- Q6) For each spectator, list their name, the seat, and the cost of the tickets they purchased.
+-- Order the result by name in ascending order and by cost in descending order.
 SELECT nome, lugar, custo FROM public.espectador e
 JOIN public.bilhete b
 ON e.email=b.email
 ORDER BY nome ASC, custo DESC
 LIMIT 20;
--- P7) Indique, sem repetições, o nome dos espectadores que compraram bilhetes para os espetáculos e o nome do artista.
+-- Q7) List, without duplicates, the names of the spectators who purchased tickets for the shows and the name of the corresponding artist.
 SELECT DISTINCT e.nome, a.nome FROM public.espectador e
 JOIN public.bilhete b
 ON e.email=b.email
@@ -37,14 +37,14 @@ ON b.id=s.id
 JOIN public.artista a
 ON a.nif=s.nif
 LIMIT 20;
--- P8) Liste os nomes de todas as pessoas, espectadores e artistas, desde que os espectadores sejam do Porto e os artistas sejam atores.
+-- Q8) List the names of all people (spectators and artists), provided the spectators are from Porto and the artists are actors.
 SELECT nome FROM public.espectador
 WHERE cidade = 'Porto'
 UNION
 SELECT nome FROM public.artista
 WHERE tipo = 'ator'
 LIMIT 20;
--- P9) Liste os nomes de todas as pessoas que não são do Porto e que não têm nomes de artistas.
+-- Q9) List the names of all people who are not from Porto and do not share a name with any artist.
 SELECT e.nome FROM public.espectador e
 LEFT JOIN public.artista a 
 ON SPLIT_PART(e.nome, ' ', 1) = SPLIT_PART(a.nome, ' ', 1)
@@ -58,19 +58,19 @@ AND NOT EXISTS (
     FROM public.artista
     WHERE SPLIT_PART(espectador.nome, ' ', 1) = SPLIT_PART(artista.nome, ' ', 1) )
 LIMIT 20;
--- P10) Qual a receita total por espetáculo? Indique o id, o título e o valor total dos bilhetes.
+-- Q10) What is the total revenue per show? Indicate the ID, the title, and the total value of the tickets.
 SELECT s.id, titulo, SUM(custo) AS valor_total FROM public.espetaculo s
 JOIN public.bilhete b
 ON s.id=b.id
 GROUP BY s.id, titulo
 LIMIT 20;
--- P11) Qual a receita total por categoria de espetáculo? Indique a categoria e o valor total dos bilhetes.
+-- Q11) What is the total revenue per show category? Indicate the category and the total value of the tickets.
 SELECT categoria, SUM(custo) AS valor_total FROM public.espetaculo s
 JOIN public.bilhete b
 ON s.id=b.id
 GROUP BY categoria
 LIMIT 20;
--- P12) Quem (email) foi a todos os espetáculos do Tony Carreira?
+-- Q12) Who (email) attended all of Tony Carreira's shows?
 SELECT b.email FROM public.bilhete b
 JOIN public.espetaculo s
 ON b.id = s.id
@@ -85,4 +85,5 @@ HAVING COUNT(DISTINCT s.id) = (
     JOIN public.artista a2
 	ON s2.nif = a2.nif
     WHERE a2.nome = 'Tony Carreira')
+
 LIMIT 20;
